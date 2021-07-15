@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 
 function DogForm() {
-    const [name, setName] = useState(" ");
+    const [name, setName] = useState("");
     const handleNameChange = (event) => setName(event.target.value);
 
-    const [breed, setBreed] = useState(" ");
+    const [breed, setBreed] = useState("");
     const handleBreedChange = (event) => setBreed(event.target.value);
 
-    const [age, setAge] = useState(" ");
+    const [age, setAge] = useState(0);
     const handleAgeChange = (event) => setAge(event.target.value);
 
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log( name, breed, age);
 
-        setName(" ");
-        setBreed(" ");
-        setAge(" ");
+        setName("");
+        setBreed("");
+        setAge("");
     } 
 
     // console.log("Value of name: ", name);
